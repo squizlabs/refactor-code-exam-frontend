@@ -6,11 +6,13 @@ This project is part of the Squiz product engineering interview process. The cod
 
 Pretend you have just inherited this codebase from the business.
 
-The project is...
+The project is a simple microservice that enables people to make a list of tasks to do. The company recently introduced TypeScript to its development team and has undergone a transformation project to add type safety to this application. There has also been an increased focus on Quality Assurance, both on a code level and UX level. It's been decided that you are the new owner of the project. Your job is to review the codebase and ensure that it meets these new standards. 
 
 ### The App
 
-To get the app to run...
+To get the app to run, please ensure you have `node 16` and `npm 7` installed. From there:
+- `npm install`
+- `npm run serve`
 
 ## Your tasks
 
