@@ -1,0 +1,60 @@
+body {
+    color: $darker-grey;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+a {
+    color: $sky-blue;
+    display: inline-block;
+
+    &:visited, &:focused {
+        color: $sky-blue;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 60rem;
+}
+
+h2 {
+    @include heading-format();
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+}
+
+.error-handler {
+    padding: 16px;
+    font-size: 14px;
+    border: 1px solid $deep-red;
+    border-radius: 4px;
+    background-color: $light-red;
+    color: $deep-red;
+}
+
+.app__wrapper {
+    background: $light-grey;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.todo__wrapper {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 5px rgba($dark-blue, 0.1);
+    min-height: 350px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    position: relative;
+    width: 400px;
+}

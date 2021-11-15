@@ -1,0 +1,40 @@
+// Base font
+$base-font-scale: 1;  // The font scale multiplier (e.g. 2 = 32px/2em/2rem)
+$base-font-pixel: 16; // Used for font size calculations & conversions
+$base-font-size: $base-font-pixel + px;
+$base-font-colour: #222;
+$base-font-family: Open Sans, Arial, sans-serif;
+
+// Selection highlighting
+$content-selection-highlight: #b3d4fc;
+
+// Default breakpoints
+$tablet: 768px;
+$desktop: 1300px;
+
+// Fonts
+$heading-font: "Montserrat", sans-serif;
+
+// Colours
+$dark-blue: #1c4e80;
+$bright-blue: #007db8;
+$sky-blue: #1678d0;
+
+$apple: #30cc00;
+
+$sunflower: #ffbb00;
+$light-sunflower: #fff5d8;
+
+$deep-red: #cf001c;
+$light-red: #f8cecc;
+
+$light-grey: #f1f1f1;
+$dark-grey: #b3b3b3;
+$darker-grey: #4d4d4d;
+
+@mixin heading-format() {
+    display: block;
+    font-family: $heading-font;
+    font-weight: 700;
+    margin: 1rem 0;
+}

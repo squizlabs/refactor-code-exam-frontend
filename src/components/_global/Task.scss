@@ -1,0 +1,25 @@
+.task__wrapper {
+    align-items: center;
+    display: flex;
+    padding: 4px 16px;
+}
+
+.task__input {
+    &.checked {
+        + label {
+            color: $apple;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.task__label {
+    display: block;
+    flex-grow: 1;
+    padding: 4px 16px;
+}
+
+.task__delete {
+    color: $deep-red;
+}
+

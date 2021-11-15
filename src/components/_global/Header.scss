@@ -1,0 +1,19 @@
+.header__wrapper {
+    color: $bright-blue;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    height: 100%;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.header__title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    padding: 16px 32px;
+}

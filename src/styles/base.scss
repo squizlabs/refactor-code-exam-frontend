@@ -1,0 +1,17 @@
+//--------------------
+// Global
+//--------------------
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $base-font-colour;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}

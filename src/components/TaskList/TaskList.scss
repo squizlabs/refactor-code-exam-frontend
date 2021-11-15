@@ -1,0 +1,35 @@
+.tasks-list__wrapper {
+    padding: 0 16px;
+}
+
+.tasks-list__empty {
+    display: flex;
+    align-content: middle;
+}
+
+.tasks-list__empty-message {
+    background-color: $light-sunflower;
+    border: 1px solid $sunflower;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 16px 28px;
+    text-align: center;
+}
+
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-list__item {
+    border-top: 1px solid $dark-grey;
+    padding: 8px 0;
+
+    &:last-child {
+        border-bottom: 1px solid $dark-grey;
+    }
+}
+
+

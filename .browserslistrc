@@ -1,0 +1,3 @@
+# Browsers that we support
+# Run "npx browserslist" to get full list
+>0.25%

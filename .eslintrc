@@ -1,0 +1,91 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@squiz",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".js", ".jsx", ".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "consistent-return": ["off"],
+    "constructor-super": "warn",
+    "curly": ["error", "all"],
+    "guard-for-in": ["error"],
+    "no-console": ["warn"],
+    "no-const-assign": "warn",
+    "no-empty-pattern": ["off"],
+    "no-this-before-super": "warn",
+    "no-undef": "off",
+    "no-underscore-dangle": ["off"],
+    "no-unreachable": "warn",
+    "no-unused-vars": ["off"],
+    "prettier/prettier": ["error"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "sort-keys": ["error", "asc", { "caseSensitive": false, "natural": true }],
+    "valid-typeof": "warn",
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "default": "generic",
+        "readonly": "generic"
+      }
+    ],
+    "@typescript-eslint/ban-types": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/explicit-member-accessibility": ["off"],
+    "@typescript-eslint/no-empty-interface": ["off"],
+    "@typescript-eslint/no-parameter-properties": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": ["off"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.json", "*.json"],
+      "rules": {
+        "header/header": ["off"]
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx"],
+      "rules": {
+        "max-len": ["off"],
+        "@typescript-eslint/ban-ts-ignore": ["off"],
+        "@typescript-eslint/no-unused-vars": ["off"]
+      }
+    }
+  ]
+}
